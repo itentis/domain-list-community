@@ -1,0 +1,1 @@
+curl --silent -L raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/pua.txt  | grep -v -E '^#' | grep -v -E '^$' | grep -v -E '.*:.*' | grep -v -E '/' | grep -v -E '^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$' > ../data/mailtrail-pua
